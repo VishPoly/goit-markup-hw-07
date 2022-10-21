@@ -1,0 +1,183 @@
+.header {
+  height: 80px;
+  padding-bottom: 25px;
+  padding-top: 24px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.studio {
+  color: var(--title-text-color);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo:hover {
+  color: var(--accent-color);
+}
+
+.item {
+  transition: background-color 0.25s ease-in-out;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav.flex {
+  display: flex;
+  margin-left: 90px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .link {
+  position: relative;
+  display: block;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transform: scale(1);
+  transition: background-color, color 0.25s ease-in-out;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+  transition: background-color, color 0.25s ease-in-out;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+  transition: background-color, color 0.25s ease-in-out;
+}
+
+.link.current::after {
+  position: absolute;
+  display: inline;
+  content: "";
+  background-color: var(--accent-color);
+  /* font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14; */
+  top: 43px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  /* bottom: 0; */
+}
+
+.contact {
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--paragraf-color);
+  transform: scale(1);
+  transition: color 0.25s ease-in-out;
+}
+
+.contact-soc {
+  margin-right: 10px;
+  fill: var(--paragraf-color);
+  transition: fill 0.25s ease-in-out;
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+  transition: color 0.25s ease-in-out;
+}
+
+.contact:hover .contact-soc,
+.contact:focus .contact-soc {
+  fill: var(--accent-color);
+  transition: fill 0.25s ease-in-out;
+}
+
+.contact-soc {
+  color: var(--paragraf-color);
+  transition: color, color 0.25s ease-in-out;
+}
+
+.hero {
+  margin: 0 auto;
+  max-width: 1600px;
+  text-align: center;
+  padding: 200px 0;
+  border-radius: 4px;
+  border: 0;
+  background-color: var(--background-hero);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/img3/Img\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  width: 696px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button-primary-hero {
+  color: #FFFFFF;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  width: 216px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 0.25s ease-in-out;
+  /* margin-top: 30px; */
+}
+
+.button-primary-hero:hover,
+.button-primary-hero:focus {
+  background-color: var(--background-button);
+  color: var(--title-text-color);
+  transition: background-color 0.25s ease-in-out;
+}/*# sourceMappingURL=main.css.map */
