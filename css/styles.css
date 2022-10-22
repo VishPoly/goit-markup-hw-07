@@ -39,10 +39,10 @@
     letter-spacing: 0.03em;
 }
 
-.logo:hover {
+/* .logo:hover {
     color: var(--accent-color);
 
-}
+} */
 
 .item {
     transition: background-color 0.25s ease-in-out;
@@ -699,21 +699,7 @@
     margin-bottom: 16px;
 }
 
-.section-caption {
-    margin-bottom: 10px;
 
-    color: var(--primary-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-}
-
-.section-dest {
-    color: var(--paragraf-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.8;
-}
 
 /* ---------------button--------------- */
 .button-primary-hero {
@@ -1044,14 +1030,14 @@
 }
 
 /* --------------------portfolio----------------- */
-.project {
+.gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 
 }
 
-.gallery {
+.gallery__class {
     border: 1px solid #EEEEEE;
     width: calc((100% - 90px) / 3);
     border: none;
@@ -1066,7 +1052,7 @@
     margin-right: 30px;
 }
 
-.card {
+.gallery__card {
     display: block;
     padding: 20px 24px;
     text-align: start;
@@ -1074,7 +1060,7 @@
     border-top: 0;
 }
 
-.section-caption {
+.gallery__section__caption {
     margin-bottom: 4px;
 
     color: var(--primary-text-color);
@@ -1083,23 +1069,39 @@
     line-height: 2;
     white-space: nowrap;
 }
-.gallery-bottom-link:hover .gallery-bottom-text {
+
+/* .gallery-section-caption {
+    margin-bottom: 10px;
+
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+} */
+
+.gallery__section__dest {
+    color: var(--paragraf-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.gallery__bottom__link:hover .gallery__bottom__text {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     transform: translateY(0%);
     transition: transform 250ms ease-in-out;
 }
-.gallery-bottom-link:hover{
+.gallery__bottom__link:hover{
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery-bottom-info {
+.gallery__bottom__info {
     position: relative;
     overflow: hidden;
 }
 
-.gallery-bottom-text {
+.gallery__bottom__text {
     position: absolute;
     top: 0;
     left: 0;
