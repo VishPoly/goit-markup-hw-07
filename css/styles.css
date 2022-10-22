@@ -130,41 +130,10 @@
 .contact:focus {
     color: var(--accent-color);
 } */
-.contact {
-    letter-spacing: 0.02em;
-    line-height: 1.14;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--paragraf-color);
-    transform: scale(1);
-    transition: color 0.25s ease-in-out;
 
-}
-
-.contact-soc {
-    margin-right: 10px;
-    fill: var(--paragraf-color);
-    transition: fill 0.25s ease-in-out;
-}
-
-.contact:hover,
-.contact:focus {
-    color: var(--accent-color);
-    transition: color 0.25s ease-in-out;
-}
-
-.contact:hover .contact-soc,
-.contact:focus .contact-soc {
-    fill: var(--accent-color);
-    transition: fill 0.25s ease-in-out;
-}
 
 /* ---------------contacts-icon---------------*/
-.contact-soc {
-    color: var(--paragraf-color);
-    transition: color, color 0.25s ease-in-out;
-}
+
 
 /* .contact-soc:hover,
 .contact-soc:focus {
@@ -178,7 +147,7 @@
     display: block;
 } */
 /* --------------------hero------------------- */
-.hero {
+.hero__class {
     margin: 0 auto;
     max-width: 1600px;
     text-align: center;
@@ -194,21 +163,7 @@
     background-repeat: no-repeat;
 }
 
-.hero-title {
-    width: 696px;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 30px;
 
-
-    color: var(--background-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
 
 /* -------backdrop-hero-------------- */
 .backdrop {
@@ -702,7 +657,7 @@
 
 
 /* ---------------button--------------- */
-.button-primary-hero {
+.hero__button__primary {
     color: #FFFFFF;
     background-color: var(--accent-color);
     font-weight: 700;
@@ -719,8 +674,8 @@
     /* margin-top: 30px; */
 }
 
-.button-primary-hero:hover,
-.button-primary-hero:focus {
+.hero__button__primary:hover,
+.hero__button__primary:focus {
     background-color: var(--background-button);
     color: var(--title-text-color);
     transition: background-color 0.25s ease-in-out;
@@ -782,7 +737,7 @@
     background-color: var(--background-hero);
 }
 
-.logo-title {
+.footer__logo__title {
     color: var(--accent-color);
     font-family: Raleway, cursive;
     font-style: normal;
@@ -803,12 +758,12 @@
 .item{
     margin-bottom: 9px;
 } */
-.studio-title {
+.footer-studio-title {
     color: var(--studio-title);
     margin-bottom: 20px;
 }
 
-.site-nav.items .navigation {
+.footer__site__nav.items .footer__navigation {
     color: var(--studio-title);
     font-weight: 400;
     font-size: 14px;
@@ -816,12 +771,12 @@
     letter-spacing: 0.02em;
 }
 
-.site-nav.items .navigation:hover,
-.site-nav.items .navigation:focus {
+.footer__site__nav.items .footer__navigation:hover,
+.footer__site__nav.items .footer__navigation:focus {
     color: var(--accent-color);
 }
 
-.site-nav.items .item {
+.footer__site__nav.items .item {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 500;
     font-size: 14px;
@@ -829,15 +784,22 @@
     letter-spacing: 0.03em;
 }
 
-.site-nav.items .item:hover,
-.site-nav.items .item:focus {
+.footer__site__nav.items .item:hover,
+.footer__site__nav.items .item:focus {
     color: var(--accent-color);
 }
 
 /* ---------------company photo------------ */
+.test__section__teams {
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--brand-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
 
-
-.test-list {
+.test__list {
     display: flex;
     gap: 30px;
     width: 1200px;
@@ -846,12 +808,12 @@
     padding: 0 15px
 }
 
-.test-item {
+.test__item {
     width: calc((100% - 150px) / 6);
     height: 92px;
 }
 
-.test-link {
+.test__link {
     height: 100%;
     border: 1px solid #AFB1B8;
     border-radius: 5px;
@@ -862,24 +824,24 @@
     transition: border-color 250ms ease-in-out;
 }
 
-.test-link-icon {
+.test__link__icon {
     fill: #AFB1B8;
     transition: border-color 0.25s ease-in-out;
 }
 
-.test-link:hover,
-.test-link:focus {
+.test__link:hover,
+.test__link:focus {
     border-color: var(--accent-color);
     transition: border-color 250ms ease-in-out;
 }
 
-.test-link:hover .test-link-icon {
+.test__link:hover .test__link__icon {
     fill: var(--accent-color);
     /* transform: scale(1); */
     transition: fill 250ms ease-in-out;
 }
 
-.test-link:focus .test-link-icon {
+.test__link:focus .test__link__icon {
     fill: var(--accent-color);
     /* transform: scale(1); */
     transition: fill 250ms ease-in-out;
@@ -887,7 +849,7 @@
 
 
 /* -----------footer-soc-icon-------------- */
-.soc-title {
+.footer__soc__title {
     color: var(--studio-title);
     font-weight: 700;
     font-size: 14px;
@@ -898,24 +860,24 @@
     margin-bottom: 20px;
 }
 
-.footer-container {
+.footer__container {
     display: flex;
     align-items: baseline;
 }
 
-.footer-address {
+.footer__address {
     /* max-width: 231px;
     width: 100%; */
     margin-right: 70px;
 }
 
-.footer-soc-list {
+.footer__soc__list {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.footer-soc-link {
+.footer__soc__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -926,26 +888,26 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-soc-item:not(:last-child) {
+.footer__soc__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+.footer__soc__link:hover,
+.footer__soc__link:focus {
     background-color: var(--accent-color);
 }
 
-.footer-soc-link:hover,
-.footer-soc-link:focus .social__icon {
+.footer__soc__link:hover,
+.footer__soc__link:focus .social__icon {
     fill: var(--studio-title);
 }
 
-.footer-soc-icon {
+.footer__soc__icon {
     fill: var(--studio-title);
 }
 
 /* sive */
-.subscribe-title{
+.footer__subscribe__title{
     color: var(--studio-title);
     font-weight: 700;
     font-size: 14px;
@@ -962,10 +924,10 @@
     align-items: baseline;
     
 } */
-.foot-div{
+.footer__div{
     padding-left: 93px;
 }
-.input-footer {
+.footer__input {
     background-color: rgba(47, 48, 58, 1);
     color: var(--studio-title);
     width: 358px;
@@ -977,13 +939,13 @@
     padding-left: 16px;
     margin-right: 12px;
 }
-.input-footer::placeholder {
+.footer__input::placeholder {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.3);
     /* padding-left: 16px; */
     padding-bottom: 15px;
 }
-.buttom-sive{
+.footer__buttom__sive{
     background-color: var(--accent-color);
     color: #FFFFFF;
     
@@ -1000,7 +962,7 @@
     padding-right: 28px;
     cursor: pointer;
 }
-.footer-svg{
+.footer__svg{
     position: absolute;
     margin-left: 10px;
     }
