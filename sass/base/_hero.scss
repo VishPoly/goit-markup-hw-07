@@ -29,6 +29,7 @@
     text-align: center;
     letter-spacing: 0.06em;
 }
+
 .hero__button__primary {
     color: #FFFFFF;
     background-color: var(--accent-color);
@@ -42,6 +43,7 @@
     border-radius: 4px;
     border: none;
     transition: background-color 0.25s ease-in-out;
+
     &:hover,
     &:focus {
         background-color: var(--background-button);
@@ -49,4 +51,3 @@
         transition: background-color 0.25s ease-in-out;
     }
 }
-

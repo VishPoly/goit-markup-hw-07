@@ -12,9 +12,6 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    &:hover {
-        color: var(--accent-color);
-        }
 }
 
 .studio {
@@ -25,9 +22,6 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
-
-
-
 .item {
     transition: background-color 0.25s ease-in-out;
 }
@@ -73,9 +67,9 @@
     transition: background-color, color 0.25s ease-in-out;
     &:hover,
     &:focus {
-        color: var(--accent-color);
-        transition: background-color, color 0.25s ease-in-out;
-    }
+            color: var(--accent-color);
+            transition: background-color, color 0.25s ease-in-out;
+        }
 }
 
 
@@ -83,6 +77,8 @@
 .site-nav .link.current {
     color: var(--accent-color);
     transition: background-color, color 0.25s ease-in-out;
+
+    /* background-color: var(--accent-color); */
 }
 
 .link.current::after {
@@ -100,4 +96,3 @@
     border-radius: 2px;
     /* bottom: 0; */
 }
-
